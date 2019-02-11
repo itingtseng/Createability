@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+    <meta name="author" content="Coderthemes">
+    <link rel="shortcut icon" href="assets/images/favicon_1.ico">
+    <title>CreateAbility Inc – Bringing you a Safer Tomorrow</title>
+    <link href="assets/plugins/radial/radial.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    <script src="assets/js/modernizr.min.js"></script>
+</head>
+
+<body class="fixed-left">
+    <!-- Begin page -->
+    <div id="wrapper">
+        <!-- Top Bar Start -->
+        <div class="topbar">
+            <!-- LOGO -->
+            <div class="topbar-left">
+                <div class="text-center">
+                    <a href="index.html" class="logo"><i class="icon-magnet icon-c-logo"></i><span>MEMBRAIN</span></a>
+                    <!-- Image Logo here -->
+                    <!--<a href="index.html" class="logo">-->
+                    <!--<i class="icon-c-logo"> <img src="assets/images/logo_sm.png" height="42"/> </i>-->
+                    <!--<span><img src="assets/images/logo_light.png" height="20"/></span>-->
+                    <!--</a>-->
+                </div>
+            </div>
+            <!-- Button mobile view to collapse sidebar menu -->
+            <nav class="navbar-custom">
+                <ul class="list-inline float-right mb-0">
+                    <li class="list-inline-item dropdown notification-list">
+                        <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-toggle="dropdown" href="#" role="button"
+                               aria-haspopup="false" aria-expanded="false">
+                                <i class="dripicons-bell noti-icon"></i>
+                                <span class="badge badge-pink noti-icon-badge">4</span>
+                            </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-lg" aria-labelledby="Preview">
+                            <!-- item-->
+                            <div class="dropdown-item noti-title">
+                                <h5><span class="badge badge-danger float-right">5</span>Notification</h5>
+                            </div>
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-success"><i class="icon-bubble"></i></div>
+                                    <p class="notify-details">Robert S. Taylor commented on Admin<small class="text-muted">1 min ago</small></p>
+                                </a>
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-info"><i class="icon-user"></i></div>
+                                    <p class="notify-details">New user registered.<small class="text-muted">1 min ago</small></p>
+                                </a>
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-danger"><i class="icon-like"></i></div>
+                                    <p class="notify-details">Carlos Crouch liked <b>Admin</b><small class="text-muted">1 min ago</small></p>
+                                </a>
+                            <!-- All-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item notify-all">
+                                    View All
+                                </a>
+                        </div>
+                    </li>
+                    <li class="list-inline-item notification-list">
+                        <a class="nav-link waves-light waves-effect" href="#" id="btn-fullscreen">
+                                <i class="dripicons-expand noti-icon"></i>
+                            </a>
+                    </li>
+                    <li class="list-inline-item notification-list">
+                        <a class="nav-link right-bar-toggle waves-light waves-effect" href="#">
+                                <i class="dripicons-message noti-icon"></i>
+                            </a>
+                    </li>
+                    <li class="list-inline-item dropdown notification-list">
+                        <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button"
+                               aria-haspopup="false" aria-expanded="false">
+                                <img src="assets/images/users/avatar-1.jpg" alt="user" class="rounded-circle">
+                            </a>
+                        <div class="dropdown-menu dropdown-menu-right profile-dropdown " aria-labelledby="Preview">
+                            <!-- item-->
+                            <div class="dropdown-item noti-title">
+                                <h5 class="text-overflow"><small>Welcome ! John</small> </h5>
+                            </div>
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="zmdi zmdi-account-circle"></i> <span>Profile</span>
+                                </a>
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="zmdi zmdi-settings"></i> <span>Settings</span>
+                                </a>
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="zmdi zmdi-lock-open"></i> <span>Lock Screen</span>
+                                </a>
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="zmdi zmdi-power"></i> <span>Logout</span>
+                                </a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="list-inline menu-left mb-0">
+                    <li class="float-left">
+                        <button class="button-menu-mobile open-left waves-light waves-effect">
+                            <i class="dripicons-menu"></i>
+                        </button>
+                    </li>
+                    <li class="hide-phone app-search">
+                        <form role="search" class="">
+                            <input type="text" placeholder="Search..." class="form-control">
+                            <a href=""><i class="fa fa-search"></i></a>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Top Bar End -->
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="left side-menu">
+            <div class="sidebar-inner slimscrollleft">
+                <!--- Divider -->
+                <div id="sidebar-menu">
+                    <ul>
+                        <li class="text-muted menu-title">Navigation</li>
+                        <li class="has_sub">
+                            <a href="crm-contact.html"><i class="ti-user"></i><span> Portal </span></a>
+                        </li>
+                        <li class="has_sub">
+                            <a href="index.html"><i class="ti-home"></i> <span> Dashboard </span> </a>
+                        </li>
+                        <li class="has_sub">
+                            <a href="chart-radial.html"><i class="ti-bar-chart"></i><span> Statistics </span></a>
+                        </li>
+                        <li class="has_sub">
+                            <a href="components-widgets.html"><i class="ti-light-bulb"></i><span class="label label-success pull-right">3</span><span> Tasks </span> </a>
+                        </li>
+                        
+                        <li class="has_sub">
+                            <a href="apps-calendar.html"><i class="ti-crown"></i><span> Schedule </span></a>
+                        </li>
+                        
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+                <div class="container">
+                    <!-- Page-Title -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="btn-group pull-right m-t-15">
+                                <button type="button" class="btn btn-default dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-expanded="false">Toilet Time</button>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="btnGroupDrop1">
+                                    <a class="dropdown-item" href="#">Toilet Time</a>
+                                    <a class="dropdown-item" href="#">Bathing Time</a>
+                                    <a class="dropdown-item" href="#">Sleeping Time</a>
+                                    <a class="dropdown-item" href="#">Activity</a>
+                                </div>
+                            </div>
+                            <h4 class="page-title">Diane Frank</h4>
+                            <p class="text-muted page-title-alt">79 years old, difficult walking</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card-box">
+                                <h4 class="m-t-0 header-title"><b>From Feb 4 to Feb 10</b></h4>
+                                <p class="text-muted m-b-30 font-13">
+                                    Diane
+                                </p>
+                                <div class="row text-center">
+                                    <div class="col-md-1">
+                                        <br>
+                                        <div data-label="85%" data-toggle="tooltip" data-title="85%" class="radial-bar radial-bar-85 radial-bar-default"></div>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <br>
+                                        <div data-label="45%" data-toggle="tooltip" data-title="45%" class="radial-bar radial-bar-45 radial-bar-default"></div>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <br>
+                                        <div data-label="60%" data-toggle="tooltip" data-title="60%" class="radial-bar radial-bar-60 radial-bar-default"></div>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <br>
+                                        <div data-label="35%" data-toggle="tooltip" data-title="20%" class="radial-bar radial-bar-20 radial-bar-default"></div>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <br>
+                                        <div data-label="70%" data-toggle="tooltip" data-title="60%" class="radial-bar radial-bar-60 radial-bar-default"></div>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <br>
+                                        <div data-label="50%" data-toggle="tooltip" data-title="20%" class="radial-bar radial-bar-20 radial-bar-default"></div>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <br>
+                                        <div data-label="55%" data-toggle="tooltip" data-title="20%" class="radial-bar radial-bar-20 radial-bar-default"></div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <!--<h4 class="m-t-0 header-title"><b>Stacked example</b></h4>
+                                            <p class="text-muted m-b-30 font-13">
+                                                Place multiple bars into the same <code>.progress</code> to stack them.
+                                            </p>-->
+                                        <div class="progress">
+                                            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20%;" class="progress-bar progress-bar-success progress-bar-striped"></div>
+                                            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;" class="progress-bar progress-bar-info"></div>
+                                            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 15%;" class="progress-bar progress-bar-warning progress-bar-striped active"></div>
+                                            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;" class="progress-bar progress-bar-danger progress-bar-striped active"></div>
+                                        </div>
+                                        <div class="progress">
+                                            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 25%;" class="progress-bar progress-bar-success progress-bar-striped"></div>
+                                            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;" class="progress-bar progress-bar-info"></div>
+                                            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;" class="progress-bar progress-bar-warning progress-bar-striped active"></div>
+                                            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;" class="progress-bar progress-bar-danger progress-bar-striped active"></div>
+                                        </div>
+                                        <div class="progress">
+                                            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 25%;" class="progress-bar progress-bar-success progress-bar-striped"></div>
+                                            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 15%;" class="progress-bar progress-bar-info"></div>
+                                            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 15%;" class="progress-bar progress-bar-warning progress-bar-striped active"></div>
+                                            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;" class="progress-bar progress-bar-danger progress-bar-striped active"></div>
+                                        </div>
+                                        <div class="progress">
+                                            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;" class="progress-bar progress-bar-success progress-bar-striped"></div>
+                                            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 15%;" class="progress-bar progress-bar-info"></div>
+                                            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20%;" class="progress-bar progress-bar-warning progress-bar-striped active"></div>
+                                            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;" class="progress-bar progress-bar-danger progress-bar-striped active"></div>
+                                        </div>
+                                        <div class="progress">
+                                            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20%;" class="progress-bar progress-bar-success progress-bar-striped"></div>
+                                            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;" class="progress-bar progress-bar-info"></div>
+                                            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 15%;" class="progress-bar progress-bar-warning progress-bar-striped active"></div>
+                                            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;" class="progress-bar progress-bar-danger progress-bar-striped active"></div>
+                                        </div>
+                                        <div class="progress">
+                                            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 15%;" class="progress-bar progress-bar-success progress-bar-striped"></div>
+                                            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;" class="progress-bar progress-bar-info"></div>
+                                            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 15%;" class="progress-bar progress-bar-warning progress-bar-striped active"></div>
+                                            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 25%;" class="progress-bar progress-bar-danger progress-bar-striped active"></div>
+                                        </div>
+                                        <div class="progress">
+                                            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20%;" class="progress-bar progress-bar-success progress-bar-striped"></div>
+                                            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 5%;" class="progress-bar progress-bar-info"></div>
+                                            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 15%;" class="progress-bar progress-bar-warning progress-bar-striped active"></div>
+                                            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 35%;" class="progress-bar progress-bar-danger progress-bar-striped active"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="portlet">
+                                <!-- /primary heading -->
+                                <div class="portlet-heading">
+                                    <h3 class="portlet-title text-dark">
+                                            Multiple Statistics
+                                        </h3>
+                                    <div class="portlet-widgets">
+                                        <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
+                                        <span class="divider"></span>
+                                        <a data-toggle="collapse" data-parent="#accordion1" href="#portlet1"><i class="ion-minus-round"></i></a>
+                                        <span class="divider"></span>
+                                        <a href="#" data-toggle="remove"><i class="ion-close-round"></i></a>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div id="portlet1" class="panel-collapse collapse show">
+                                    <div class="portlet-body">
+                                        <div id="website-stats" style="height: 320px;" class="flot-chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="portlet">
+                                <!-- /primary heading -->
+                                <div class="portlet-heading">
+                                    <h3 class="portlet-title text-dark">
+                                            Realtime Statistics
+                                        </h3>
+                                    <div class="portlet-widgets">
+                                        <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
+                                        <span class="divider"></span>
+                                        <a data-toggle="collapse" data-parent="#accordion1" href="#portlet2"><i class="ion-minus-round"></i></a>
+                                        <span class="divider"></span>
+                                        <a href="#" data-toggle="remove"><i class="ion-close-round"></i></a>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div id="portlet2" class="panel-collapse collapse show">
+                                    <div class="portlet-body">
+                                        <div id="flotRealTime" style="height: 320px;" class="flot-chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="portlet">
+                                <!-- /primary heading -->
+                                <div class="portlet-heading">
+                                    <h3 class="portlet-title text-dark">
+                                            Donut Pie
+                                        </h3>
+                                    <div class="portlet-widgets">
+                                        <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
+                                        <span class="divider"></span>
+                                        <a data-toggle="collapse" data-parent="#accordion1" href="#portlet3"><i class="ion-minus-round"></i></a>
+                                        <span class="divider"></span>
+                                        <a href="#" data-toggle="remove"><i class="ion-close-round"></i></a>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div id="portlet3" class="panel-collapse collapse show">
+                                    <div class="portlet-body">
+                                        <div id="donut-chart">
+                                            <div id="donut-chart-container" class="flot-chart" style="height: 320px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="portlet">
+                                <!-- /primary heading -->
+                                <div class="portlet-heading">
+                                    <h3 class="portlet-title text-dark">
+                                            Pie Chart
+                                        </h3>
+                                    <div class="portlet-widgets">
+                                        <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
+                                        <span class="divider"></span>
+                                        <a data-toggle="collapse" data-parent="#accordion1" href="#portlet4"><i class="ion-minus-round"></i></a>
+                                        <span class="divider"></span>
+                                        <a href="#" data-toggle="remove"><i class="ion-close-round"></i></a>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div id="portlet4" class="panel-collapse collapse show">
+                                    <div class="portlet-body">
+                                        <div id="pie-chart">
+                                            <div id="pie-chart-container" class="flot-chart" style="height: 320px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="portlet">
+                                <!-- /primary heading -->
+                                <div class="portlet-heading">
+                                    <h3 class="portlet-title text-dark">
+                                            Pie Chart
+                                        </h3>
+                                    <div class="portlet-widgets">
+                                        <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
+                                        <span class="divider"></span>
+                                        <a data-toggle="collapse" data-parent="#accordion1" href="#portlet7"><i class="ion-minus-round"></i></a>
+                                        <span class="divider"></span>
+                                        <a href="#" data-toggle="remove"><i class="ion-close-round"></i></a>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div id="portlet7" class="panel-collapse collapse show">
+                                    <div class="portlet-body">
+                                        <div id="ordered-bars-chart" style="height: 320px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="portlet">
+                                <!-- /primary heading -->
+                                <div class="portlet-heading">
+                                    <h3 class="portlet-title text-dark">
+                                            Combine Statistics
+                                        </h3>
+                                    <div class="portlet-widgets">
+                                        <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
+                                        <span class="divider"></span>
+                                        <a data-toggle="collapse" data-parent="#accordion1" href="#portlet5"><i class="ion-minus-round"></i></a>
+                                        <span class="divider"></span>
+                                        <a href="#" data-toggle="remove"><i class="ion-close-round"></i></a>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div id="portlet5" class="panel-collapse collapse show">
+                                    <div class="portlet-body">
+                                        <div id="combine-chart">
+                                            <div id="combine-chart-container" class="flot-chart" style="height: 320px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- container -->
+            </div> <!-- content -->
+            <footer class="footer text-right">
+                &copy; 2016 - 2017. All rights reserved.
+            </footer>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Right content here -->
+        <!-- ============================================================== -->
+        <!-- Right Sidebar -->
+        <div class="side-bar right-bar nicescroll">
+            <h4 class="text-center">Chat</h4>
+            <div class="contact-list nicescroll">
+                <ul class="list-group contacts-list">
+                    <li class="list-group-item">
+                        <a href="#">
+                                <div class="avatar">
+                                    <img src="assets/images/users/avatar-1.jpg" alt="">
+                                </div>
+                                <span class="name">Chadengle</span>
+                                <i class="fa fa-circle online"></i>
+                            </a>
+                        <span class="clearfix"></span>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">
+                                <div class="avatar">
+                                    <img src="assets/images/users/avatar-2.jpg" alt="">
+                                </div>
+                                <span class="name">Tomaslau</span>
+                                <i class="fa fa-circle online"></i>
+                            </a>
+                        <span class="clearfix"></span>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">
+                                <div class="avatar">
+                                    <img src="assets/images/users/avatar-3.jpg" alt="">
+                                </div>
+                                <span class="name">Stillnotdavid</span>
+                                <i class="fa fa-circle online"></i>
+                            </a>
+                        <span class="clearfix"></span>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">
+                                <div class="avatar">
+                                    <img src="assets/images/users/avatar-4.jpg" alt="">
+                                </div>
+                                <span class="name">Kurafire</span>
+                                <i class="fa fa-circle online"></i>
+                            </a>
+                        <span class="clearfix"></span>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">
+                                <div class="avatar">
+                                    <img src="assets/images/users/avatar-5.jpg" alt="">
+                                </div>
+                                <span class="name">Shahedk</span>
+                                <i class="fa fa-circle away"></i>
+                            </a>
+                        <span class="clearfix"></span>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">
+                                <div class="avatar">
+                                    <img src="assets/images/users/avatar-6.jpg" alt="">
+                                </div>
+                                <span class="name">Adhamdannaway</span>
+                                <i class="fa fa-circle away"></i>
+                            </a>
+                        <span class="clearfix"></span>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">
+                                <div class="avatar">
+                                    <img src="assets/images/users/avatar-7.jpg" alt="">
+                                </div>
+                                <span class="name">Ok</span>
+                                <i class="fa fa-circle away"></i>
+                            </a>
+                        <span class="clearfix"></span>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">
+                                <div class="avatar">
+                                    <img src="assets/images/users/avatar-8.jpg" alt="">
+                                </div>
+                                <span class="name">Arashasghari</span>
+                                <i class="fa fa-circle offline"></i>
+                            </a>
+                        <span class="clearfix"></span>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">
+                                <div class="avatar">
+                                    <img src="assets/images/users/avatar-9.jpg" alt="">
+                                </div>
+                                <span class="name">Joshaustin</span>
+                                <i class="fa fa-circle offline"></i>
+                            </a>
+                        <span class="clearfix"></span>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">
+                                <div class="avatar">
+                                    <img src="assets/images/users/avatar-10.jpg" alt="">
+                                </div>
+                                <span class="name">Sortino</span>
+                                <i class="fa fa-circle offline"></i>
+                            </a>
+                        <span class="clearfix"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /Right-bar -->
+    </div>
+    <!-- END wrapper -->
+    <script>
+    var resizefunc = [];
+    </script>
+    <!-- jQuery  -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/tether.min.js"></script><!-- Tether for Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/detect.js"></script>
+    <script src="assets/js/fastclick.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/jquery.blockUI.js"></script>
+    <script src="assets/js/waves.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.nicescroll.js"></script>
+    <script src="assets/js/jquery.scrollTo.min.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.min.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.time.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.tooltip.min.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.resize.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.pie.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.selection.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.stack.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.orderBars.min.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.crosshair.js"></script>
+    <script src="assets/pages/jquery.flot.init.js"></script>
+    <script src="assets/js/jquery.core.js"></script>
+    <script src="assets/js/jquery.app.js"></script>
+</body>
+
+</html>
